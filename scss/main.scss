@@ -12,7 +12,7 @@ $color-stathd: hsla(0, 0%, 100%, 0.6);
 }
 body {
     max-width: 1440px;
-    min-height: 150vh;
+    min-height: 100vh;
     background-color: $color-mainbg;
     display: flex;
     align-items: center;
@@ -21,6 +21,10 @@ body {
     font-size: 15px;
     font-family: Inter, sans-serif;
     color: $color-white;
+    @media all and (max-width: 375px)
+    {
+        min-height: 140vh;
+    }
 }
 // body
 .component {
@@ -35,7 +39,7 @@ body {
     @media all and (max-width: 375px)
     {
         max-width: 88%;
-        min-height: 100vh;
+        min-height: 110vh;
         flex-direction: column;
     }
     & .proj-prev {

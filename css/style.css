@@ -6,7 +6,7 @@
 
 body {
   max-width: 1440px;
-  min-height: 150vh;
+  min-height: 100vh;
   background-color: #090b1a;
   display: flex;
   align-items: center;
@@ -15,6 +15,11 @@ body {
   font-size: 15px;
   font-family: Inter, sans-serif;
   color: white;
+}
+@media all and (max-width: 375px) {
+  body {
+    min-height: 140vh;
+  }
 }
 
 .component {
@@ -29,7 +34,7 @@ body {
 @media all and (max-width: 375px) {
   .component {
     max-width: 88%;
-    min-height: 100vh;
+    min-height: 110vh;
     flex-direction: column;
   }
 }
