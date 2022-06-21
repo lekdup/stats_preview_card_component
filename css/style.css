@@ -16,7 +16,7 @@ body {
   font-family: Inter, sans-serif;
   color: white;
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 800px) {
   body {
     min-height: 140vh;
   }
@@ -25,13 +25,12 @@ body {
 .component {
   display: flex;
   flex-direction: row-reverse;
-  max-width: 80%;
-  height: 400px;
+  max-width: 65rem;
   border-radius: 0.5rem;
   background-color: #1b1938;
   overflow: hidden;
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 800px) {
   .component {
     max-width: 88%;
     min-height: 110vh;
@@ -44,9 +43,9 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media all and (max-width: 375px) {
+@media all and (max-width: 800px) {
   .component .proj-prev {
-    padding: 2em;
+    padding: 2rem;
     max-width: 100%;
     text-align: center;
   }
@@ -54,63 +53,43 @@ body {
     font-size: 26px;
   }
   .component .proj-prev .table {
-    padding-top: 1em;
+    padding-top: 1rem;
     flex-direction: column;
-    gap: 2em;
+    gap: 2rem;
   }
 }
-.component .proj-prev span {
+.component .proj-prev .purple-word {
   color: #aa5cdb;
 }
 .component .proj-prev p {
   color: rgba(255, 255, 255, 0.75);
-  margin-top: 2em;
+  line-height: 1.8rem;
+  margin-top: 2rem;
   font-weight: 400;
+  font-size: 0.9rem;
 }
-.component .proj-prev .table {
+.component .table {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
-}
-.component .proj-prev .table__wrapper li {
   list-style: none;
 }
-.component .proj-prev .table__wrapper li:first-of-type {
+.component .table__number {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 0.2em;
+  display: block;
 }
-.component .proj-prev .table__wrapper li:last-of-type {
+.component .table__description {
   font-family: Lexend Deca, sans-serif;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
 }
 .component .image {
-  max-width: 50%;
-  position: relative;
-  z-index: 0;
-}
-.component .image__mobile {
-  display: none;
-}
-.component .image .overlay {
-  position: absolute;
-  inset: 0;
   background-color: #aa5cdb;
-  z-index: 1;
-  mix-blend-mode: multiply;
 }
-@media all and (max-width: 375px) {
-  .component .image {
-    max-width: 100%;
-  }
-  .component .image__desktop {
-    display: none;
-  }
-  .component .image__mobile {
-    display: block;
-  }
+.component .image img {
+  mix-blend-mode: multiply;
 }
 .component .image img {
   width: 100%;

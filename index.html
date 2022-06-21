@@ -22,30 +22,26 @@
 <body>
   <div class="component">
     <div class="image">
-      <img src="images/image-header-desktop.jpg" alt="people discussing" class="image__desktop">
-      <img src="images/image-header-mobile.jpg" alt="team meeting" class="image__mobile">
+      <picture>
+        <source srcset="images/image-header-desktop.jpg" media="(min-width: 800px)" type="image/jpg">
+        <source srcset="images/image-header-mobile.jpg" media="(max-width: 800px)" type="image/jpg">
+  
+        <img src="images/image-header-desktop.jpg" alt="team meeting">
+      </picture>
       <div class="overlay"></div>
-    </div>
+    </div> <!-- image -->
     <div class="proj-prev">
-      <h1>Get <span>insights</span> that help your business grow.</h1>
+      <h1>Get <span class="purple-word">insights</span> that help your business grow.</h1>
       <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-    experience, and overall efficiency.</p>
-      <div class="table">
-        <ul class="table__wrapper">
-          <li>10k+</li>
-          <li>companies</li>
+        experience, and overall efficiency.</p>
+        
+        <ul class="table">
+          <li><span class="table__number">10k+</span><span class="table__description">companies</span></li>
+          <li><span class="table__number">314</span><span class="table__description">templates</span></li>
+          <li><span class="table__number">12M+</span><span class="table__description">queries</span></li>
         </ul>
-        <ul class="table__wrapper">
-          <li>314</li>
-          <li>templates</li>
-        </ul>
-        <ul class="table__wrapper">
-          <li>12M+</li>
-          <li>queries</li>
-        </ul>
-      </div> <!--table-->
     </div> <!--proj-prev-->
-
+    
   </div><!--component-->
    
 

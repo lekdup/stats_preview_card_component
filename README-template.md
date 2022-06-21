@@ -60,7 +60,19 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this project i learnt about <picture> and also inset property.
+```html 
+    <picture>
+        <source srcset="images/image-header-desktop.jpg" media="(min-width: 800px)" type="image/jpg">
+        <source srcset="images/image-header-mobile.jpg" media="(max-width: 800px)" type="image/jpg">
+  
+        <img src="images/image-header-desktop.jpg" alt="team meeting">
+      </picture>
+
+```CSS
+    .overlay {
+            position: absolute;
+            inset: 0;}
 
 To see how you can add code snippets, see below:
 
